@@ -66,41 +66,29 @@
 }
 /*Nav-bar end*/
 
-/*login form start*/
+
+/*registration form start*/
 .card-header{
     text-align: center;
     font-weight: bold;
     font-size: 32px;
-    color: #B53471  ;
-}
-.card{
-    border: none;
-    border-radius: 20px;
+    color: #B53471;
 }
 
-#loginbtn{
-    border: none;
-    background: linear-gradient(to right, #520900, #B43471);
+.card-body{
     font-weight: bold;
-    margin-top: 20px;
+
+}
+
+#registerbtn{
+    background: linear-gradient(to right, #520900, #B43471);
+    border: none;
     border-radius: 10px;
 }
-#loginbtn:hover{
+
+#registerbtn:hover{
     background: #B43471;
 }
-#or{
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-}
-#signup{
-    text-align: center;
-    margin-top: 5px;
-}
-#signup a:hover{
-    font-weight: bold;
-}
-
 #fb{
     color: white;
     border: none;
@@ -113,11 +101,20 @@
     background: blue;
 }
 
-.form-group{
+#or{
+    text-align: center;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-/*login form end*/
+#signin{
+    text-align: center;
+    margin-top: 5px;
+}
+#signin a:hover{
+    font-weight: bold;
+}
+/*registarion form end*/
 
 .background{
     background-repeat: no-repeat;
@@ -135,5 +132,3 @@
     width: 100%;
 
 }
-
-
