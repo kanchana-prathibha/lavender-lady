@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 #nav-row{
     background-color: #B43471;!important;
@@ -8,6 +9,7 @@
 }
 #nav-main{
     background-color: #B43471;!important;
+
 
 }
 #nav-outer{
@@ -68,8 +70,12 @@
 .card-header{
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     color: #B53471  ;
+}
+.card{
+    border: none;
+    border-radius: 20px;
 }
 
 #loginbtn{
@@ -77,6 +83,7 @@
     background: linear-gradient(to right, #520900, #B43471);
     font-weight: bold;
     margin-top: 20px;
+    border-radius: 10px;
 }
 #loginbtn:hover{
     background: #B43471;
@@ -100,6 +107,32 @@
     font-weight: bold;
     background:  #005cfa;
     margin-bottom: 15px;
+    border-radius: 10px;
+}
+#fb:hover{
+    background: blue;
 }
 
+
 /*login form end*/
+
+.background{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    margin: 0;
+}
+#bg-img{
+    width: 100%;
+
+}
+
+.form-group{
+    font-weight: bold;
+}
