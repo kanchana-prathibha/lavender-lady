@@ -1,0 +1,204 @@
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Card-category{
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: #520900;
+}
+.explore-button {
+    background-color: #B43471;
+
+    color: #520900;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}
+/*@keyframes changeBackground {
+    0% {
+
+        background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0300916179GRN-3ladies-blouse_fashion-bug-srilanak_compressed.jpg");
+    }
+    100% {
+        background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0310104168DBL-2ladies-dress_fashion-bug-srilanak_compressed.jpg");
+    }
+}*/
+
+#T-shirt-card {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0310104168BIG-2ladies-dress_fashion-bug-srilanak_compressed.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#T-shirt-card:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0310104168BIG-1ladies-dress_fashion-bug-srilanak_compressed.jpg");
+    transition: background-image 1s ease-in;
+}
+
+#Shirt-card {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0300916178LPL-1ladies-blouse_fashion-bug_srilanka_compressed.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#Shirt-card:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0300916178LPL-2ladies-blouse_fashion-bug_srilanka_compressed.jpg");
+    transition: background-image 1s ease-in;
+}
+
+#flowe-shirt {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0300916140WHP-1_Ladies-crop-top_fashion-bug_srilanka_compressed.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#flowe-shirt:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0300916140WHP-2_Ladies-crop-top_fashion-bug_srilanka_compressed-600x764.jpg");
+    transition: background-image 1s ease-in;
+}
+#saree {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0305301338DPL-1_Ladies_Saree_Fashion-Bug-Sri-Lanka.jpg  ");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#saree:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0305301338DPL-3_Ladies_Saree_Fashion-Bug-Sri-Lanka.jpg");
+    transition: background-image 1s ease-in;
+}
+#denim {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0301803343LBL-2_Ladies_Denim_Jean_Fashion-Bug-Sri-Lanka.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#denim:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0301803343LBL-1_Ladies_Denim_Jean_Fashion-Bug-Sri-Lanka.jpg");
+    transition: background-image 1s ease-in;
+}
+#denim {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0301803343LBL-2_Ladies_Denim_Jean_Fashion-Bug-Sri-Lanka.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#denim:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0301803343LBL-3_Ladies_Denim_Jean_Fashion-Bug-Sri-Lanka.jpg");
+    transition: background-image 1s ease-in;
+}
+#pants {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/08/0303702862LBR-2_Ladies-palazzo-pant-_fashion-bug_srilanka_compressed.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#pants:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/08/0303702862LBR-1_Ladies-palazzo-pant-_fashion-bug_srilanka_compressed.jpg");
+    transition: background-image 1s ease-in;
+}
+#MAXI{
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0310901335GRN-2Ladies-dress_fashion-bug_srilanka_compressed-600x764.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#MAXI:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/11/0310901335GRN-1Ladies-dress_fashion-bug_srilanka_compressed.jpg");
+    transition: background-image 1s ease-in;
+}
+#linen{
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0304000220LPK-1_Ladies-top_fashion-bug_srilanka_compressed-600x764.jpg");
+    background-size: cover;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: background-image 1s ease-in;
+
+}
+
+#linen:hover {
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/10/0304000220LPK-2_Ladies-top_fashion-bug_srilanka_compressed.jpg");
+    transition: background-image 1s ease-in;
+}
