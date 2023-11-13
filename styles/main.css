@@ -65,6 +65,20 @@
 /*Nav-bar end*/
 
 .custom-hr {
-    border: 5px solid #520900;
+
+    border: 5px solid #B43471;
     margin: 20px 0;
+}
+.search-form {
+    width: 100%;
+}
+
+.bar {
+    width: 100%; /* Make the input take up the full width of the form */
+    border-radius: 25px; /* Add some border-radius for rounded corners */
+}
+
+.serch {
+    width: 200px;
+    border-radius: 25px; /* Add some border-radius for rounded corners */
 }
