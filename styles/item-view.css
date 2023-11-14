@@ -67,75 +67,97 @@
 }
 /*Nav-bar end*/
 
-/*login form start*/
-.card-header{
-    text-align: center;
-    font-weight: bold;
-    font-size: 32px;
-    color: #B53471  ;
-}
-.card{
-    border: none;
-    border-radius: 20px;
-}
-
-#loginbtn{
-    border: none;
-    background: linear-gradient(to right, #520900, #B43471);
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-#loginbtn:hover{
-    background: #B43471;
-}
-#or{
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-}
-#signup{
-    text-align: center;
-    margin-top: 5px;
-}
-#signup a:hover{
-    font-weight: bold;
-}
-
-#fb{
-    color: white;
-    border: none;
-    font-weight: bold;
-    background:  #005cfa;
-    margin-bottom: 15px;
-    border-radius: 10px;
-}
-#fb:hover{
-    background: blue;
-}
-
-.form-group{
-    font-weight: bold;
-}
-
-/*login form end*/
-
-.background{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: fixed;
+#card-body{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Item start*/
+.container {
     width: 100%;
-    height: 100vh;
-    left: 0;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.card-body {
+    padding: 0px;
+    width: 80vw;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+
+}
+
+.col-md-4 {
+    width: 33.33333333333333%;
+    float: left;
+}
+
+@media (max-width: 540px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+#status{
+    display: flex;
+}
+
+#image{
+    max-width: 250px;
+}
+
+#btn{
     margin: 0;
     padding: 0;
 }
-#bg-img{
-    width: 100%;
+#cart{
+    margin: 0;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+}
+#order{
+    width: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
+#title{
+    font-size: 25px;
+}
+#discription{
+    font-size: 18px;
+}
+#price{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
+/*Item end*/
