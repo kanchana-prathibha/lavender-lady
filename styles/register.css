@@ -106,7 +106,11 @@
     margin-top: 10px;
     font-weight: bold;
 }
-
+#card{
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 #signin{
     text-align: center;
     margin-top: 5px;
@@ -130,5 +134,23 @@
 }
 #bg-img{
     width: 100%;
+    position: inherit;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    margin: 0;
+}
+#nav-bg{
+    background-color: #520900;
+}
+#back-ground{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 1000px;
+    background-image: url('https://images.pexels.com/photos/8386666/pexels-photo-8386666.jpeg?auto=compress&cs=tinysrgb&w=1600'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
 
 }
