@@ -87,7 +87,8 @@
 
 .card-body {
     padding: 0px;
-    width: 80vw;
+    width: 55vw;
+
 }
 
 .card-title {
@@ -140,14 +141,26 @@
     width: 150px;
     text-align: center;
     justify-content: center;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(to right, #B53471,#833471,#B53471);
+}
+
+#cart:hover{
+    background: linear-gradient(to top, #B53471,#B53471,#833471);
 }
 #order{
     width: 150px;
     display: flex;
     text-align: center;
     justify-content: center;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(to right, #12CBC4,#5758BB);
 }
-
+#order:hover{
+    background: linear-gradient(to top, #5758BB,#12CBC4);
+}
 #title{
     font-size: 25px;
 }
@@ -159,5 +172,19 @@
     font-weight: bold;
 }
 
+#cardview{
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cardview:hover{
+    transform: scale(1.01);
+}
+
+
 
 /*Item end*/
+
+#back{
+    background: linear-gradient(to right, #f8c291,#B43471,#f8c291);
+}
