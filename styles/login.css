@@ -17,6 +17,7 @@
 }
 #nav-bg{
     background-color: #292023;
+
 }
 
 
@@ -130,6 +131,7 @@
     height: 100vh;
     left: 0;
     margin: 0;
+    padding: 0;
 }
 #bg-img{
     width: 100%;
