@@ -67,32 +67,83 @@
             <div class="card">
                 <img src="logo/Lavender%20color%20logo-01.png">
                 <div class="card-header">Sign up</div>
+                <?php
+                if (isset($_POST["submit"])) {
+                    $UserName = $_POST["username"];
+                    $email = $_POST["email"];
+                    $mobile = $_POST["mobile"];
+                    $sex =0;
+                    $gender =$_POST["gender"];
+                    $password = $_POST["password"];
+                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                    $errors = array();
+                    if($gender==1){
+                       $sex="Male";
+                    }
+                    if($gender==2){
+                        $sex="Female";
+                    }
+                    if (empty($UserName) OR empty($email) OR empty($password) OR empty($mobile)) {
+                        array_push($errors,"All fields are required");
+                    }
+                    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        array_push($errors, "Email is not valid");
+                    }
+                    if (strlen($password)<4) {
+                        array_push($errors,"Password is too short");
+                    }
+
+                    require_once "database.php";
+                    $sql = "SELECT * FROM customers WHERE email = '$email'";
+                    $result = mysqli_query($conn, $sql);
+                    $rowCount = mysqli_num_rows($result);
+                    if ($rowCount>0) {
+                        array_push($errors,"Email already exists!");
+                    }
+                    if (count($errors)>0) {
+                        foreach ($errors as  $error) {
+                            echo "<div class='alert alert-danger'>$error</div>";
+                        }
+                    }else{
+                        $sql = "INSERT INTO customers (username,email,mobile, password,sex) VALUES ( ?, ?, ?,?,? )";
+                        $stmt = mysqli_stmt_init($conn);
+                        $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
+                        if ($prepareStmt) {
+                            mysqli_stmt_bind_param($stmt,"sssss",$UserName, $email, $mobile, $passwordHash,$sex);
+                            mysqli_stmt_execute($stmt);
+                            echo "<div class='alert alert-success'>You are registered successfully.</div>";
+                        }else{
+                            die("Something went wrong");
+                        }
+                    }
+                }
+                ?>
                 <div class="card-body">
-                    <form>
+                    <form action="register.php" method="post">
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                         </div>
                         <div class="form-group">
                             <label for="mobile">Mobile</label>
-                            <input type="text" class="form-control" id="mobile" placeholder="Enter your Mobile number">
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your Mobile number">
                         </div>
                         <div class="form-group">
                             <label for="male" class="col-form-label">Select Gender:</label>
                             <div class="row">
                                 <div class="col">
                                     <div class="custom-control custom-radio" style="font-weight: normal">
-                                        <input type="radio" id="male" name="gender" class="custom-control-input">
+                                        <input type="radio" id="male" name="gender" value="1" class="custom-control-input">
                                         <label class="custom-control-label" for="male">Male</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="custom-control custom-radio" style="font-weight: normal">
-                                        <input type="radio" id="female" name="gender" class="custom-control-input">
+                                        <input type="radio" id="female" name="gender" value="2" class="custom-control-input">
                                         <label class="custom-control-label" for="female">Female</label>
                                     </div>
                                 </div>
@@ -100,10 +151,10 @@
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary btn-block" id="registerbtn">Sign Up</button>
+                            <button type="submit" class="btn btn-primary btn-block" id="Register" name="submit">Sign Up</button>
                         </div>
                         <div class="form-group" id="or">
                             <label>OR</label>
@@ -115,7 +166,7 @@
                         </div>
                         <div class="form-group" id="signin">
                             <label>Are you already registerd ?</label>
-                            <a href="#">Login here</a>
+                            <a href="">Login here</a>
                         </div>
                     </form>
                 </div>
