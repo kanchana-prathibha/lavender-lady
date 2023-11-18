@@ -173,7 +173,7 @@
 }
 
 #cardview{
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -185,6 +185,14 @@
 
 /*Item end*/
 
+/*
 #back{
     background: linear-gradient(to right, #f8c291,#B43471,#f8c291);
+}
+*/
+
+
+body{
+    background-image: url('https://images.pexels.com/photos/8386666/pexels-photo-8386666.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
 }
