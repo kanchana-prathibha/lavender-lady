@@ -1,6 +1,8 @@
+
 <?php
 session_start();
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -63,6 +65,7 @@ session_start();
 </div>
 
 <!--nav-bar-end-->
+
 <?php
     if (isset($_POST["Login"])) {
     $username = $_POST["username"];
@@ -100,6 +103,7 @@ session_start();
 
 }
 ?>
+
 <!--Login form start-->
 <div class="container-fluid" id="back-ground">
   <div class="row justify-content-center">
@@ -108,6 +112,7 @@ session_start();
         <img src="logo/Lavender%20color%20logo-01.png">
         <div class="card-header">Sign in</div>
         <div class="card-body">
+
           <form action="login.php" method="post" id="login-from">
             <div class="form-group">
               <label for="username">Username</label>
@@ -119,6 +124,7 @@ session_start();
             </div>
             <div class="col-md-12">
               <button type="submit" value="Login" name="Login" class="btn btn-primary btn-block" id="loginbtn">Login</button>
+
             </div>
             <div class="form-group" id="or">
               <label>OR</label>
