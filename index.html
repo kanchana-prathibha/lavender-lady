@@ -20,7 +20,12 @@
 
 </head>
 <body>
+ <div class="snowflakes">
+
+ </div>
+<script src="js/xmas.js"></script>
 <!--nav-bar-start-->
+
 <div class="container-fluid" id="nav-bg">
   <div class="row" id="nav-row">
     <div class="nav" id="nav-main" >
@@ -47,7 +52,7 @@
             </li>
 
             <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Login</a>
+              <a style="color:white " class="nav-link" href= "login.php  ">&nbsp;Login</a>
             </li>
           </ul>
         </div>
@@ -57,27 +62,29 @@
 </div>
 <!--nav-bar-end-->
 <!--search bar-->
+<div class="container-fluid"id="search-nav">
+  <nav class="container" >
+    <form class="">
+      <br>
+      <input class="form-control mr-sm-2 bar" type="search" placeholder="Search" aria-label="Search">
+      <br>
+      <button class="btn btn-outline-dark my-2 my-sm-0 serch" type="submit">Search Items</button>
+    </form>
+  </nav>
+  <!--search bar end-->
+</div>
 
-<nav class="container">
-  <form class="">
-    <br>
-    <input class="form-control mr-sm-2 bar" type="search" placeholder="Search" aria-label="Search">
-    <br>
-    <button class="btn btn-outline-dark my-2 my-sm-0 serch" type="submit">Search Items</button>
-  </form>
-</nav>
-<!--search bar end-->
 
 <div id="link-to-category">
   <section class="py-4 py-xl-5">
     <div class="container">
-      <div class="bg-light border rounded border-0 border-dark overflow-hidden">
+      <div style="background-color: #c7ecee" class="border rounded border-0 border-dark overflow-hidden">
         <div class="row g-0">
           <div class="col-md-6">
             <div class="text-dark p-4 p-md-5">
-              <h2 class="fw-bold text-dark mb-3"><strong>Men Collection</strong></h2>
-              <p class="mb-4">We provide to you best quality products for you</p>
-              <div class="my-3"><a class="btn  btn-lg me-2" role="button" href="men.php" style="background:#520900;color: #B43471 ;">Goto Collection</a></div>
+              <h2 class="fw-bold text-dark mb-3"><strong>Men's Collection</strong></h2>
+              <p class="mb-4">We provide  best quality products for you</p>
+              <div class="my-3"><a class="btn  btn-lg me-2" role="button" href="men-out-log.php" style="background:#74b9ff;color: #B43471 ;font-weight: bold">Goto Collection</a></div>
             </div>
           </div>
           <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="logo/Mens_Fashion-Bug-Sri-Lanka_Clothing-Store_King-Of-Fashion.jpg"></div>
@@ -90,14 +97,14 @@
  <div id="link-to-cd">
   <section class="py-4 py-xl-5">
     <div class="container">
-      <div class="bg-light border rounded border-0 border-dark overflow-hidden">
+      <div style="background-color: #ff9ff3" class=" border rounded border-0 border-dark overflow-hidden">
         <div class="row g-0">
           <div class="col-md-6"><img class="w-100 h-100 fit-cover" src="logo/Unisex_Fashion-Bug-Sri-Lanka_Clothing-Store_King-Of-Fashion.jpg"></div>
           <div class="col-md-6 order-first order-md-last" style="min-height: 250px;">
             <div class="text-dark p-4 p-md-5">
-              <h2 class="fw-bold text-dark mb-3"><strong>Women Collections</strong></h2>
-              <p class="mb-4">We provide to you best quality products for you</p>
-              <div class="my-3" ><a  class="btn btn-lg me-2" role="button" href="women.html" id="goCollection"style="background:#520900;color: #B43471;"><span >Goto Collection</span></a></div>
+              <h2 class="fw-bold text-dark mb-3"><strong>Women's Collections</strong></h2>
+              <p class="mb-4">We provide best quality products for you</p>
+              <div class="my-3" ><a class="btn btn-lg me-2" role="button" href="women-out-log.php" id="goCollection" style="background:#D980FA;color: #B43471;font-weight: bold"><span >Goto Collection</span></a></div>
             </div>
           </div>
         </div>
@@ -108,6 +115,12 @@
 
 
 <br><br>
+</div>
+<div class="container-fluid">
+  <div class="row" id="satin-saree">
+    <img src="test-photos/Home_Page_Saree_Banner_Fashion-Bug-Sri-Lanka.jpg" alt="Your Image" class="img-fluid">
+  </div>
+
 </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -180,6 +193,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/d8fba019aa.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>

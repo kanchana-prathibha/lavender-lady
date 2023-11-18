@@ -1,4 +1,7 @@
-<!doctype html>
+<?php
+session_start();
+?>
+    <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,39 +26,56 @@
 </head>
 <body>
 <!--nav-bar-start-->
-<div class="container-fluid" id="nav-bg">
-  <div class="row" id="nav-row">
-    <div class="nav" id="nav-main" >
-      <nav class="navbar navbar-expand-lg navbar-light" id="nav-outer">
-        <img src="logo/white%20nav%20logo-01-01.png" alt="" style="height: 80px;width: 200px;margin-right: 0px;margin-right: 60%">
-        <!--<a class="navbar-brand" href="#">Your Website</a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav" id="nav-items" >
-            <li class="nav-item active">
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Home</a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Category</a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Cart </a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
-            </li>
+<div class="snowflakes">
 
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Login</a>
-            </li>
-          </ul>
+</div>
+<script src="js/xmas.js"></script>
+<div class="container-fluid" id="nav-bg">
+    <div class="row" id="nav-row">
+        <div class="nav" id="nav-main" >
+            <nav class="navbar navbar-expand-lg navbar-light" id="nav-outer">
+                <img src="logo/white%20nav%20logo-01-01.png" alt="" style="height: 80px;width: 200px;margin-right: 0px;margin-right: 60%">
+                <!--<a class="navbar-brand" href="#">Your Website</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="nav-items" >
+                        <li class="nav-item active">
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Cart </a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <?php
+                                        echo$_SESSION["user_name"];
+                                        ?></a>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Profile</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="logout.php">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
     </div>
-  </div>
 </div>
 <!--nav-bar-end-->
 <!--Women category view-->
