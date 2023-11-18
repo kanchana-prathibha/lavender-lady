@@ -1,8 +1,6 @@
-
 <?php
 session_start();
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -56,25 +54,9 @@ session_start();
                         <li class="nav-item">
                             <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
                         </li>
-
                         <li class="nav-item">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <?php
-                                        echo$_SESSION["user_name"];
-                                        ?></a>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Profile</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="logout.php">Logout</a>
-                                    </div>
-                                </li>
-                            </ul>
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Login</a>
                         </li>
-
-
                     </ul>
                 </div>
             </nav>

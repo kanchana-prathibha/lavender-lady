@@ -1,8 +1,3 @@
-
-<?php
-session_start();
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,7 +19,7 @@ session_start();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/men-category.css">
+    <link rel="stylesheet" href="styles/women-category.css">
 </head>
 <body>
 <!--nav-bar-start-->
@@ -58,23 +53,8 @@ session_start();
                         </li>
 
                         <li class="nav-item">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <?php
-                                        echo$_SESSION["user_name"];
-                                        ?></a>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Profile</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="logout.php">Logout</a>
-                                    </div>
-                                </li>
-                            </ul>
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Login</a>
                         </li>
-
-
                     </ul>
                 </div>
             </nav>
@@ -87,39 +67,54 @@ session_start();
     <div class="row" id="card-container">
         <div class="card" style="border: none;margin:10px" id="T-shirt-card">
             <div class="card-content">
-                <div class="card-title">TROUSERS</div>
+                <div class="card-title">FORKS</div>
                 <button class="explore-button">Explore More</button>
             </div>
         </div>
 
         <div class="card" style="border: none;margin:10px" id="Shirt-card">
             <div class="card-content">
-                <div class="card-title">T_SHIRTS</div>
+                <div class="card-title">LONG SLEEVE TOP</div>
                 <button class="explore-button">Explore More</button>
             </div>
         </div>
 
         <div class="card" style="border: none;margin:10px" id="flowe-shirt">
             <div class="card-content">
-                <div class="card-title">SHORTS</div>
+                <div class="card-title">PRINTED TOP</div>
                 <button class="explore-button">Explore More</button>
             </div>
         </div>
         <div class="card" style="border: none;margin:10px" id="saree">
             <div class="card-content">
-                <div class="card-title">SPORT KITS</div>
+                <div class="card-title">SAREE</div>
                 <button class="explore-button">Explore More</button>
             </div>
         </div>
-
+        <div class="card" style="border: none;margin:10px" id="denim">
+            <div class="card-content">
+                <div class="card-title">DENIM</div>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
         <div class="card" style="border: none;margin:10px" id="pants">
             <div class="card-content">
                 <div class="card-title">PANTS</div>
                 <button class="explore-button">Explore More</button>
             </div>
         </div>
-
-
+        <div class="card" style="border: none;margin:10px" id="MAXI">
+            <div class="card-content">
+                <div class="card-title">MAXI DRESS</div>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+        <div class="card" style="border: none;margin:10px" id="linen">
+            <div class="card-content">
+                <div class="card-title">LINEN DRESS</div>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
     </div>
 </div>
 
