@@ -1,6 +1,8 @@
+
 <?php
 session_start();
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -54,6 +56,7 @@ session_start();
                         <li class="nav-item">
                             <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
                         </li>
+
                         <li class="nav-item">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
@@ -70,6 +73,7 @@ session_start();
                                 </li>
                             </ul>
                         </li>
+
 
                     </ul>
                 </div>
