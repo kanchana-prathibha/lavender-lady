@@ -78,39 +78,7 @@ session_start();
             </nav>
         </div>
     </div>
-=======
-  <div class="row" id="nav-row">
-    <div class="nav" id="nav-main" >
-      <nav class="navbar navbar-expand-lg navbar-light" id="nav-outer">
-        <img src="logo/white%20nav%20logo-01-01.png" alt="" style="height: 80px;width: 200px;margin-right: 0px;margin-right: 60%">
-        <!--<a class="navbar-brand" href="#">Your Website</a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav" id="nav-items" >
-            <li class="nav-item active">
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Home</a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Category</a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Cart </a>
-            </li>
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
-            </li>
 
-            <li class="nav-item">
-              <a style="color:white " class="nav-link" href= "">&nbsp;Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
 </div>
 <!--nav-bar-end-->
 <!--Women category view-->
