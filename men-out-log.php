@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -51,7 +54,6 @@
                         <li class="nav-item">
                             <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
                         </li>
-
                         <li class="nav-item">
                             <a style="color:white " class="nav-link" href= "">&nbsp;Login</a>
                         </li>

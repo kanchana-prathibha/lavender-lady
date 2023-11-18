@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -61,7 +66,43 @@
 
 <!--nav-bar-end-->
 
+<?php
+    if (isset($_POST["Login"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    require_once "database.php";
 
+
+    if ($email=='officer@gmail.com'&& $password=="admin"){
+        header("Location:fuser.php");
+        die();
+    }
+
+    if ($email=='admin@gmail.com'&& $password=="admin"){
+        header("Location:dashborad.php");
+        die();
+    }
+
+    else{
+        $sql = "SELECT * FROM customers WHERE username = '$username'";
+        $result = mysqli_query($conn, $sql);
+        $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        if ($user) {
+            if (password_verify($password, $user["password"])) {
+                $_SESSION["user_name"]=$user["username"];
+                $_SESSION["user_id"]=$user["id"];
+                header("Location: home.php");
+                die();
+            }else{
+                echo "<div class='alert alert-danger'>Password does not match</div>";
+            }
+        }else{
+            echo "<div class='alert alert-danger'>User Name does not match</div>";
+        }
+    }
+
+}
+?>
 
 <!--Login form start-->
 <div class="container-fluid" id="back-ground">
@@ -71,17 +112,19 @@
         <img src="logo/Lavender%20color%20logo-01.png">
         <div class="card-header">Sign in</div>
         <div class="card-body">
-          <form>
+
+          <form action="login.php" method="post" id="login-from">
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+              <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
             </div>
             <div class="col-md-12">
-              <button type="submit" class="btn btn-primary btn-block" id="loginbtn">Login</button>
+              <button type="submit" value="Login" name="Login" class="btn btn-primary btn-block" id="loginbtn">Login</button>
+
             </div>
             <div class="form-group" id="or">
               <label>OR</label>
@@ -93,7 +136,7 @@
             </div>
             <div class="form-group" id="signup">
               <label>Are you new user?</label>
-              <a href="register.html">Register here</a>
+              <a href="register.php">Register here</a>
             </div>
           </form>
         </div>
