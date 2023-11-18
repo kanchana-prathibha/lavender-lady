@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+
 }
+
 #nav-row{
     background-color: #B43471;!important;
 
@@ -30,11 +32,11 @@
     padding: 10px;
 }
 #Postadd-id {
-    padding-left: 225px;
+
 
 }
 #login-id{
-    padding-left: 450px;
+
 }
 #post-addBtn{
     width: 180px;
@@ -81,4 +83,48 @@
 .serch {
     width: 200px;
     border-radius: 25px; /* Add some border-radius for rounded corners */
+}
+#satin-saree:hover{
+  cursor: pointer;
+}
+#link-to-category{
+    background: rgba(255, 204, 204,1.0);
+
+}
+#link-to-cd{
+    background: rgba(255, 204, 204,1.0);
+}
+#search-nav{
+
+    background: rgba(255, 204, 204,1.0);
+}
+#snow{
+    margin: 0;
+    overflow: hidden;
+    background-color:#FEEEEF;
+}
+
+.snowflakes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 1;
+    animation: inherit;
+
+}
+
+.snowflake {
+    position: absolute;
+    display: inline-block;
+    color: snow;
+    font-size: 1em;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(200vh);
+    }
 }

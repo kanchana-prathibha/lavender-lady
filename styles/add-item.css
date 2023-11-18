@@ -67,73 +67,54 @@
 }
 /*Nav-bar end*/
 
-/*login form start*/
-.card-header{
-    text-align: center;
+/*form start*/
+h1 {
+    color: #B43471;
+}
+#productForm{
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
     font-weight: bold;
-    font-size: 32px;
-    color: #B53471  ;
-}
-.card{
-    border: none;
-    border-radius: 20px;
-}
 
-#loginbtn{
-    border: none;
-    background: linear-gradient(to right, #520900, #B43471);
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-#loginbtn:hover{
-    background: #B43471;
-}
-#or{
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-}
-#signup{
-    text-align: center;
-    margin-top: 5px;
-}
-#signup a:hover{
-    font-weight: bold;
-}
 
-#fb{
-    color: white;
-    border: none;
-    font-weight: bold;
-    background:  #005cfa;
-    margin-bottom: 15px;
-    border-radius: 10px;
 }
-#fb:hover{
-    background: blue;
-}
-
-.form-group{
-    font-weight: bold;
-}
-
-/*login form end*/
-
-.background{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: fixed;
+#addItem{
     display: flex;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
 }
-#bg-img{
-    width: 100%;
+#addItem button{
+    background: linear-gradient(to right, #520900, #B43471);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bold;
 
+}
+
+#addItem button:hover{
+    background: linear-gradient(to right,  #B43471,#520900);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/*form end*/
+
+body {
+    /*background: linear-gradient(to right, #ff7e5f, #feb47b);*/
+    /*background: #f8c291;*/
+    /*background: linear-gradient(to right, #B43471,black, #B43471);*/
+    background-image: url('https://images.pexels.com/photos/8386666/pexels-photo-8386666.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
 }
