@@ -23,10 +23,10 @@
       <ul class="list-unstyled">
         <li><a href="admin.php">Dashboard</a></li>
 
-        <li><a href="admin.php">Add new Users</a></li>
+        <li><a href="add-user.php">Add new Users</a></li>
 
-        <li><a href="admin.php">Add Item</a></li>
-        <li><a href="admin.php">Manage Item</a></li>
+        <li><a href="add-item.php">Add Item</a></li>
+        <li><a href="manage-item.php">Manage Item</a></li>
         <li><a href="admin.php">View Orders</a></li>
         <li><a href="admin.php">Settings</a></li>
         <li><a href="admin.php">About</a></li>
