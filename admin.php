@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="logo/Lavender%20icon-02.png">
   <title>Admin Dashboard</title>
+
   <link rel="stylesheet" href="styles/admin.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,7 +22,9 @@
       <h2 class="mb-4">Admin Dashboard</h2>
       <ul class="list-unstyled">
         <li><a href="admin.php">Dashboard</a></li>
+
         <li><a href="admin.php">Add new Users</a></li>
+
         <li><a href="admin.php">Add Item</a></li>
         <li><a href="admin.php">Manage Item</a></li>
         <li><a href="admin.php">View Orders</a></li>
