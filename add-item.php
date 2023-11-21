@@ -102,8 +102,11 @@ if (isset($_GET['delete'])){
             <h3>add a new product</h3>
             <select class="box" name="category">
                 <option>Select the category</option>
-                <option value="men">Men</option>
-                <option value="women">Women</option>
+                <option value="Men Trousers">Men Trousers</option>
+                <option value="T_Shirts">T_Shirts</option>
+                <option value="Men Shorts">Men Shorts</option>
+                <option value="SPORT KITS">SPORT KITS</option>
+                <option value="FORMAL SHIRT">FORMAL SHIRT</option>
             </select>
 
             <input type="text" placeholder="Enter Product Name" name="title" class="box">
@@ -135,7 +138,7 @@ $select = mysqli_query($conn,"SELECT * FROM product");
         <!--opening { bracket-->
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <img src="img/<?php echo $row['photo'];?>" height="100" alt="">
+                <img src="img/<?php echo $row['photo'];?>" height="350px" alt="">
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <h3>Category : <?php echo $row['category'];?></h3>
@@ -152,8 +155,8 @@ $select = mysqli_query($conn,"SELECT * FROM product");
                 <h3>Note : <?php echo $row['discription'];?></h3>
             </div>
             <div class="col-sm-6 col-md-4 col-xl-2">
-                <a href="update.php?edit=<?php echo $row['product_id']; ?>" class="btn" name="update_product"> update </a>
-                <a href="Admin.php?delete=<?php echo $row['product_id']; ?>" class="btn_remove"> delete </a>
+                <a href="update.php?edit=<?php echo $row['product_id']; ?>" class="btn" name="update_product" style="width: 120px"> update </a>
+                <a href="?delete=<?php echo $row['product_id']; ?>" class="btn_remove" style="width: 120px"> delete </a>
 
             </div>
         </div>
