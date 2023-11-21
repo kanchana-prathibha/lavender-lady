@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav-row{
+    background-color: #B43471;!important;
+
+}
+#nav-main{
+    background-color: #B43471;!important;
+
+}
+#nav-outer{
+    background: linear-gradient(to right, #520900,#B43471 );!important;
+}
+#nav-bg{
+    background-color: #292023;
+}
+
+
+.nav-item{
+    color: rgb(253, 167, 223) !important;
+    /* background: linear-gradient(to right, #701723,#94264C );!important;*/
+
+
+}
+#nav-items{
+    font-weight: bold;
+    color: rgb(253, 167, 223) !important;
+    padding: 10px;
+}
+#Postadd-id {
+
+
+}
+#login-id{
+
+}
+#post-addBtn{
+    width: 180px;
+    height: 40px;
+}
+/* Media query for devices with a maximum width of 768 pixels (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    #Postadd-id {
+        padding-left: 0px;
+    }
+    #login-id{
+        padding-left: 0px;
+    }
+    #spacer-1{
+        display: none;
+    }
+}
+/*@media only screen and (max-width: 1440px) {
+    #Postadd-id {
+        padding-left: 0px;
+    }
+}*/
+#spacer-1{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+/*Nav-bar end*/
+
+
+/* Add some custom styles for the wishlist */
+body {
+    background-color: #f8f9fa;
+    align-items: center;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/adc9b9104315617.5f6084db8ab0a.jpg");
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+.card {
+    transition: transform 0.3s;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Make the wishlist items responsive */
+@media (max-width: 700px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
