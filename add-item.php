@@ -102,9 +102,11 @@ if (isset($_GET['delete'])){
             <h3>add a new product</h3>
             <select class="box" name="category">
                 <option>Select the category</option>
-                <option value="men">Men</option>
-                <option value="women">Women</option>
+                <option value="Men Trousers">Men Trousers</option>
+                <option value="T_Shirts">T_Shirts</option>
                 <option value="Men Shorts">Men Shorts</option>
+                <option value="SPORT KITS">SPORT KITS</option>
+                <option value="FORMAL SHIRT">FORMAL SHIRT</option>
             </select>
 
             <input type="text" placeholder="Enter Product Name" name="title" class="box">
