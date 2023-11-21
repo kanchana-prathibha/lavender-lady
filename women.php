@@ -87,7 +87,7 @@ session_start();
     <div class="card" style="border: none;margin:10px" id="T-shirt-card">
       <div class="card-content">
         <div class="card-title">FORKS</div>
-        <button class="explore-button">Explore More</button>
+          <a href="frock-view.php" class="explore-button"style="color: white">Explore More</a>
       </div>
     </div>
 
