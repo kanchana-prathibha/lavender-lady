@@ -101,7 +101,7 @@ session_start();
     <div class="card" style="border: none;margin:10px" id="flowe-shirt">
       <div class="card-content">
         <div class="card-title">PRINTED TOP</div>
-        <button class="explore-button">Explore More</button>
+          <a href="printed-top-view.php" class="explore-button"style="color: white">Explore More</a>
       </div>
     </div>
     <div class="card" style="border: none;margin:10px" id="saree">
