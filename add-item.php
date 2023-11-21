@@ -110,6 +110,10 @@ if (isset($_GET['delete'])){
                 <option value="LONG SLEEVE TOP">WOMEN-LONG SLEEVE TOP</option>
                 <option value="PRINTED TOP">WOMEN PRINTED TOP</option>
                 <option value="SAREE">SAREE</option>
+                <option value="LADIES DENIM">LADIES DENIM</option>
+                <option value="Women PANTS">PANTS</option>
+                <option value="Women MAXI DRESS">WOMEN MAXI DRESS</option>
+                <option value="Women LINEN DRESS">WOMEN LINEN DRESS</option>
             </select>
 
             <input type="text" placeholder="Enter Product Name" name="title" class="box">
