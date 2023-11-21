@@ -44,15 +44,18 @@
 }
 .explore-button {
     background-color: #B43471;
-
     color: #520900;
+    color: white;
     border: none;
     padding: 10px 15px;
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.explore-button:hover{
+    color:white;
+    background-color: red;
+}
 @media (max-width: 1199px) {
     .card {
         width: calc(33.33% - 20px);
