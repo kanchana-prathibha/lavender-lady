@@ -101,37 +101,37 @@ session_start();
     <div class="card" style="border: none;margin:10px" id="flowe-shirt">
       <div class="card-content">
         <div class="card-title">PRINTED TOP</div>
-        <button class="explore-button">Explore More</button>
+          <a href="printed-top-view.php" class="explore-button"style="color: white">Explore More</a>
       </div>
     </div>
     <div class="card" style="border: none;margin:10px" id="saree">
       <div class="card-content">
         <div class="card-title">SAREE</div>
-        <button class="explore-button">Explore More</button>
+          <a href="saree-view.php" class="explore-button"style="color: white">Explore More</a>
       </div>
     </div>
     <div class="card" style="border: none;margin:10px" id="denim">
       <div class="card-content">
         <div class="card-title">DENIM</div>
-        <button class="explore-button">Explore More</button>
+          <a href="ladies-denim-view.php" class="explore-button" style="color: white">Explore More</a>
       </div>
     </div>
     <div class="card" style="border: none;margin:10px" id="pants">
       <div class="card-content">
         <div class="card-title">PANTS</div>
-        <button class="explore-button">Explore More</button>
+          <a href="women-pants-view.php" class="explore-button" style="color: white">Explore More</a>
       </div>
     </div>
     <div class="card" style="border: none;margin:10px" id="MAXI">
       <div class="card-content">
         <div class="card-title">MAXI DRESS</div>
-        <button class="explore-button">Explore More</button>
+          <a href="mexi-dress-view.php" class="explore-button" style="color: white">Explore More</a>
       </div>
     </div>
     <div class="card" style="border: none;margin:10px" id="linen">
       <div class="card-content">
         <div class="card-title">LINEN DRESS</div>
-        <button class="explore-button">Explore More</button>
+          <a href="linen-dress-view.php" class="explore-button" style="color: white">Explore More</a>
       </div>
     </div>
   </div>
