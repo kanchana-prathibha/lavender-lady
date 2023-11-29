@@ -161,7 +161,7 @@
     transition: background-image 1s ease-in;
 }
 #pants {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/11/DSC08630-1.jpg");
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/09/0201616967BKD-5Formal-Shirt_fashion-bug_srilanka_compressed.jpg");
     background-size: cover;
     position: relative;
     width: 350px;
@@ -171,7 +171,7 @@
 }
 
 #pants:hover {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/11/DSC086131-1.jpg");
+    background-image: url("https://fbpros3v1.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2023/09/0201616967BKD-3Formal-Shirt_fashion-bug_srilanka_compressed.jpg");
     transition: background-image 1s ease-in;
 }
 #MAXI{

@@ -1,0 +1,79 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url("https://images.pexels.com/photos/8386666/pexels-photo-8386666.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vw;
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.table {
+    background-color: #fff;
+}
+
+.table thead th {
+    background-color: #f5f5f5;
+    border-top: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Custom styles for queries section */
+.query-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.list-unstyled li{
+    padding: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #520900, #B43471);
+    box-shadow: 0 2px 8px rgb(151, 44, 95);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.list-unstyled li:hover{
+    background: linear-gradient(to right, #B43471, #520900);
+}
+
+.list-unstyled a{
+    color: white;
+    margin-left: 5px;
+}
+.list-unstyled button{
+    background-color: #ff2c11;
+    border: none;
+    align-content: flex-end;
+}
+
+.btn-primary a {
+    color: white;
+}
+

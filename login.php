@@ -66,43 +66,6 @@ session_start();
 
 <!--nav-bar-end-->
 
-<?php
-    if (isset($_POST["Login"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    require_once "database.php";
-
-
-    if ($email=='officer@gmail.com'&& $password=="admin"){
-        header("Location:fuser.php");
-        die();
-    }
-
-    if ($email=='admin@gmail.com'&& $password=="admin"){
-        header("Location:dashborad.php");
-        die();
-    }
-
-    else{
-        $sql = "SELECT * FROM customers WHERE username = '$username'";
-        $result = mysqli_query($conn, $sql);
-        $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-        if ($user) {
-            if (password_verify($password, $user["password"])) {
-                $_SESSION["user_name"]=$user["username"];
-                $_SESSION["user_id"]=$user["id"];
-                header("Location: home.php");
-                die();
-            }else{
-                echo "<div class='alert alert-danger'>Password does not match</div>";
-            }
-        }else{
-            echo "<div class='alert alert-danger'>User Name does not match</div>";
-        }
-    }
-
-}
-?>
 
 <!--Login form start-->
 <div class="container-fluid" id="back-ground">
@@ -113,7 +76,7 @@ session_start();
         <div class="card-header">Sign in</div>
         <div class="card-body">
 
-          <form action="login.php" method="post" id="login-from">
+          <form action="loginaction.php" method="post" id="login-from">
             <div class="form-group">
               <label for="username">Username</label>
               <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
