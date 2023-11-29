@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="logo/Lavender%20icon-02.png">
+
+    <title>wishlist</title>
+
+
+    <link rel="stylesheet" href="styles/wishlist.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--nav-bar-start-->
+<div class="container-fluid" id="nav-bg">
+    <div class="row" id="nav-row">
+        <div class="nav" id="nav-main" >
+            <nav class="navbar navbar-expand-lg navbar-light" id="nav-outer">
+                <img src="logo/white%20nav%20logo-01-01.png" alt="" style="height: 80px;width: 200px;margin-right: 0px;margin-right: 160%">
+                <!--<a class="navbar-brand" href="#">Your Website</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="nav-items" >
+                        <li class="nav-item active">
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">&nbsp;Cart </a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:white " class="nav-link" href= "">Wishlist&nbsp;</a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a style="color:white " class="nav-link" href= "login.php  ">&nbsp;Login</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--nav-bar-end-->
+
+
+
+<div class="container mt-5">
+    <h2>Wishlist</h2>
+    <div class="row" id="wishlist">
+        <!-- Wishlist items will be dynamically added here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to add an item to the wishlist
+    function addToWishlist(productName, image) {
+        // Create a new wishlist item
+        var newItem = `<div class="col-md-4 mb-4">
+                      <div class="card">
+                        <img src="${image}" class="card-img-top" alt="${productName}">
+                        <div class="card-body">
+                          <h5 class="card-title">${productName}</h5>
+                          <button class="btn btn-danger btn-sm" onclick="removeFromWishlist(this)">Remove from Wishlist</button>
+                        </div>
+                      </div>
+                   </div>`;
+
+        // Append the new item to the wishlist
+        $("#wishlist").append(newItem);
+    }
+
+    // Function to remove an item from the wishlist
+    function removeFromWishlist(button) {
+        // Remove the item from the wishlist
+        $(button).closest(".col-md-4").remove();
+    }
+
+    // Example usage:
+    addToWishlist("T-shirt", "https://example.com/t-shirt.jpg");
+    addToWishlist("Jeans", "https://example.com/jeans.jpg");
+    addToWishlist("Jeans", "https://example.com/jeans.jpg");
+
+
+</script>
+</body>
+</html>

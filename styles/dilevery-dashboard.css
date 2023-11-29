@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#nav-row{
+    background-color: #B43471;!important;
+
+}
+#nav-main{
+    background-color: #B43471;!important;
+
+
+}
+#nav-outer{
+    background: linear-gradient(to right, #520900,#B43471 );!important;
+}
+#nav-bg{
+    background-color: #292023;
+}
+
+
+.nav-item{
+    color: rgb(253, 167, 223) !important;
+    /* background: linear-gradient(to right, #701723,#94264C );!important;*/
+
+
+}
+#nav-items{
+    font-weight: bold;
+    color: rgb(253, 167, 223) !important;
+    padding: 10px;
+}
+#Postadd-id {
+    padding-left: 225px;
+
+}
+#login-id{
+    padding-left: 450px;
+}
+#post-addBtn{
+    width: 180px;
+    height: 40px;
+}
+/* Media query for devices with a maximum width of 768 pixels (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    #Postadd-id {
+        padding-left: 0px;
+    }
+    #login-id{
+        padding-left: 0px;
+    }
+    #spacer-1{
+        display: none;
+    }
+}
+/*@media only screen and (max-width: 1440px) {
+    #Postadd-id {
+        padding-left: 0px;
+    }
+}*/
+#spacer-1{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+/*Nav-bar end*/
+
+/*Tracking form start*/
+.card-header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: blue;
+}
+
+.card-body{
+    font-weight: bold;
+
+}
+
+#registerbtn{
+    background: linear-gradient(to right, #520900, #B43471);
+    border: none;
+    border-radius: 10px;
+}
+
+#registerbtn:hover{
+    background: #B43471;
+}
+#fb{
+    color: white;
+    border: none;
+    font-weight: bold;
+    background:  #005cfa;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+#fb:hover{
+    background: blue;
+}
+
+#or{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#card{
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#signin{
+    text-align: center;
+    margin-top: 5px;
+}
+#signin a:hover{
+    font-weight: bold;
+}
+
+
+/*Tracking form end*/
+
+body{
+    background-image: url('https://media.threatpost.com/wp-content/uploads/sites/103/2021/03/09182846/location-tracking-gps.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Item start*/
+
+#manageForm{
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.1);
+    border-radius: 20px;
+    background-color: lightcyan;
+    /*backdrop-filter: blur(25px);*/
+    /*color: white;*/
+
+
+}
+
+
+.form-group{
+    /*  border: 1px solid black;*/
+}
+
+#updatebtn{
+    background: linear-gradient(to right, #A3CB38, #12CBC4);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#deletebtn{
+    background: linear-gradient(to right, #520900, #B43471);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+/*Item end*/
