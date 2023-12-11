@@ -56,7 +56,23 @@ if (isset($_POST["Login"])) {
         }
 
     }
+    if ($sql = "SELECT * FROM owner WHERE 	name = '$username'") {
+        $result = mysqli_query($conn, $sql);
+        $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        if ($user) {
+            if (password_verify($password, $user["password"])) {
+                $_SESSION["user_name"] = $user["username"];
+                $_SESSION["user_id"] = $user["id"];
+                header("Location: owner-dashbord.php");
+                die();
+            } else {
+                echo "<div class='alert alert-danger'>Password does not match</div>";
+            }
+        } else {
+            echo "<div class='alert alert-danger'>User Name does not match</div>";
+        }
 
+    }
 
     /* else{
          $sql = "SELECT * FROM customers WHERE username = '$username'";
