@@ -1,6 +1,25 @@
 <?php
 session_start();
+require './classes/DbConnector.php';
+require 'classes/wishlist_process.php';
+
+use classes\wishlist_process;
+$Userrr = new Wishlist();
+
+// take data from clothing collection page query1 and //store that values again to database query2
+if (isset($_GET['wishlist'])) {
+    $wishlistId = $_GET['wishlist'];
+    //$size = $_POST['size'];
+    $Userrr->getProductDetails($wishlistId, $_SESSION["user_name"]);
+}
+
+
+if (isset($_GET['delete'])) {
+    $wishlistId = $_GET['delete'];
+    $Userrr->removeFromWishlist($wishlistId);
+}
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -75,80 +94,44 @@ session_start();
 <!--nav-bar-end-->
 
 <?php
-@include 'database.php';
-$select = mysqli_query($conn, "SELECT * FROM product WHERE category = 'women'");
-?>
-<!--Item start-->
-<?php while ($row = mysqli_fetch_assoc($select)) { ?>
-<div class="container">
-    <div class="card mb-3" id="cardview">
-        <div class="row g-0">
+//@include 'config.php';
 
-            <div class="col-md-4" id="image">
-                <img src="img/<?php echo $row['photo']; ?>" height="100" alt="picture 1" style="height:250px;" class="mx-auto d-block img-fluid">
-            </div>
+$Wishlistt = $Userrr->getItems($_SESSION["user_name"]);
 
-            <div class="col-md-12 col-lg-4 col-sm-1">
-                <div class="card-body">
-                    <h5 class="text-center"><?php echo $row['product_name'] ?></h5>
-                    <h7 class="card-text" id="discription"><?php echo $row['discription'] ?></h7>
-                    <p class="card-text" id="price">Rs.<?php echo $row['price'] ?>.00</p>
+foreach ($Wishlistt as $row) {
 
-                </div>
+//$Userrr->getItems($cusid);
+    ?>
 
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-24">
-                            <form action="cart.php?cart=<?php echo $row['product_id']; ?>" method="post">
-                                <div class="form-group d-flex justify-content-between" >
-                                    <div class="form-check" >
-                                        <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
-                                        <label class="form-check-label" for="option1">S</label>
-                                    </div>
+    <div class="container mt-3">
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
-                                        <label class="form-check-label" for="option2">M</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
-                                        <label class="form-check-label" for="option3">L</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
-                                        <label class="form-check-label" for="option4">XL</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="options" id="option5" value="option5">
-                                        <label class="form-check-label" for="option5">XXL</label>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
+        <div class="rounded border-0   overflow-hidden" style="background-color:#EEE9DA">
+            <div class="com">
+                <div class="row mt-6">
+                    <div class="col-12 col-md-6 col-lg-4" style="min-height: 200px;">
+                        <img src="img/<?php echo $row['photo']; ?>" height="100" alt="picture 1" style="height:250px;" class="mx-auto d-block img-fluid">
                     </div>
-                </div>
-                <form action="wishlist.php?wishlist=<?php echo $row['product_id']; ?>" method="post">
-                    <button class="btn btn-outline-warning" title="Add to wishlist"><i class="fa fa-heart-o"></i></button><br><br>
-                </form>
-                <div class="card-body " id="btn">
-                    <a href="wishlist.php"><button type="button" id="cart" class="btn btn-primary"  ><i class="fa-solid fa-heart fa-beat"></i></button></a>
+                    <div class="col-md-6 col-lg-4 mt-2 ">
+                        <h5 class="text-center" id="item-name"><?php echo $row['product_name'] ?></h5><br>
+                        <h6 id="item-name-disc"><?php echo $row['discription'] ?> </h6>
 
-                    <button type="button" id="cart" class="btn btn-secondary">Add to Cart</button>
+                        <!--Ieam code or order code-->
 
-                    <button type="button" id="order" class="btn btn-secondary">Order</button>
+                        <h5 class="tedxt-center" id="item-price">Rs.<?php echo $row['price'] ?>.00</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex flex-row align-items-center justify-content-center"
+                         style="display: block;">
+
+                        <form action="wishlist.php" method="post">
+                            <a href="wishlist.php?delete=<?php echo $row['wishlist-Id']; ?>" class="btn btn-danger"> Remove </a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 <?php } ?>
-
 <!--Item end-->
 
 <!--Start of Tawk.to Script-->
