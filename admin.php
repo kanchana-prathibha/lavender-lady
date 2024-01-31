@@ -27,7 +27,7 @@
 
         <li><a href="add-item.php">Add Item</a></li>
         <li><a href="manage-item.php">Manage Item</a></li>
-        <li><a href="admin.php">View Orders</a></li>
+        <li><a href="vieworders.php">View Orders</a></li>
         <li><a href="admin.php">Settings</a></li>
         <li><a href="admin.php">About</a></li>
         <button class="btn btn-primary"><a href="logout.php">Logout  <i class="fa-solid fa-right-from-bracket fa-fade" style="color: #ff2c11;"></i></a></button>
