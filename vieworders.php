@@ -3,65 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <title>Owner Dashboard</title>
+    <title>View Orders</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #b2bec3;
-        }
-        #chart-container {
+        table {
+            border-collapse: collapse;
             width: 100%;
-            max-width: 1200px;
-            margin: 50px auto;
+            margin-top: 20px;
         }
-        canvas {
+        th, td {
             border: 1px solid #ddd;
-            background-color: #fff;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-<div id="chart-container">
-    <canvas id="myBarChart"></canvas>
-</div>
-<style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-top: 20px;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
-</style>
-<script>
-    // Dummy data
-    const labels = ['December', 'January', 'March', 'April', 'May   '];
-    const data = {
-        labels: labels,
-        datasets: [{
-            label: 'Orders In lavanderLady',
-            backgroundColor: '#81ecec',
-            borderColor: '#0984e3',
-            borderWidth: 2,
-            data: [5, 7, 0, 0, 0],
-        }]
-    };
 
-    // Create the bar chart
-    const ctx = document.getElementById('myBarChart').getContext('2d');
-    const myBarChart = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-    });
-</script>
 <?php
 @include 'database.php';
 $select = mysqli_query($conn, "SELECT * FROM orders");
@@ -97,7 +57,6 @@ if (mysqli_num_rows($select) > 0) {
 // Close connection
 $conn->close();
 ?>
-<!-- Include Chart.js library -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>

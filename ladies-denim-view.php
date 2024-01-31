@@ -137,10 +137,9 @@ $select = mysqli_query($conn, "SELECT * FROM product WHERE category = 'DENIM'");
                     </form>
                     <div class="card-body " id="btn">
                         <a href="wishlist.php"><button type="button" id="cart" class="btn btn-primary"  ><i class="fa-solid fa-heart fa-beat"></i></button></a>
-
-                        <button type="button" id="cart" class="btn btn-secondary">Add to Cart</button>
-
-                        <button type="button" id="order" class="btn btn-secondary">Order</button>
+                        <form action="cart.php?cart=<?php echo $row['product_id']; ?>" method="post">
+                            <button class="btn btn-outline-warning" title="Add to wishlist">add to cart</button><br><br>
+                        </form>
                     </div>
                 </div>
             </div>
