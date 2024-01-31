@@ -132,10 +132,17 @@ $select = mysqli_query($conn, "SELECT * FROM product WHERE category = 'women'");
                         </div>
                     </div>
                 </div>
-
+                <form action="wishlist.php?wishlist=<?php echo $row['product_id']; ?>" method="post">
+                    <button class="btn btn-outline-warning" title="Add to wishlist"><i class="fa fa-heart-o"></i></button><br><br>
+                </form>
                 <div class="card-body " id="btn">
-                    <button type="button" id="cart" class="btn btn-primary">Add to Cart</button>
-                    <button type="button" id="order" class="btn btn-secondary">Order</button>
+                    <a href="wishlist.php"><button type="button" id="cart" class="btn btn-primary"  ><i class="fa-solid fa-heart fa-beat"></i></button></a>
+
+
+                    <form action="cart.php?cart=<?php echo $row['product_id']; ?>" method="post">
+                        <button class="btn btn-outline-warning" title="Add to wishlist">add to cart</button><br><br>
+                    </form>
+
                 </div>
             </div>
         </div>

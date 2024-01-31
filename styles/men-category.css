@@ -75,7 +75,7 @@
 }*/
 
 #T-shirt-card {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/11/M126_PISCASIO1-scaled.jpg");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2022/11/CREAM-CARAMEL-6-Copy.jpg");
     background-size: cover;
     position: relative;
     width: 350px;
@@ -85,12 +85,12 @@
 }
 
 #T-shirt-card:hover {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/11/M126_PISCASIO2-scaled.jpg");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2022/11/CREAM-CARAMEL-3-Copy.jpg");
     transition: background-image 1s ease-in;
 }
 
 #Shirt-card {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/10/MOOSE-CLOTHING0399-copy-scaled.jpg");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2023/08/MOOSE-CLOTHING0084-copy-scaled-6-scaled.jpg");
     background-size: cover;
     position: relative;
     width: 350px;
@@ -100,12 +100,12 @@
 }
 
 #Shirt-card:hover {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/10/MT-CU-scaled.jpg");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2023/08/LCCU-scaled.jpg");
     transition: background-image 1s ease-in;
 }
 
 #flowe-shirt {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/10/MOOSE-CLOTHING0997-copy-2-scaled.jpg");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2022/12/MOOSE-CLOTHING0493-copy.jpg");
     background-size: cover;
     position: relative;
     width: 350px;
@@ -115,11 +115,11 @@
 }
 
 #flowe-shirt:hover {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/10/MOOSE-CLOTHING1012-copy-2-scaled.jpg");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2022/12/MOOSE-CLOTHING0507-copy.jpg");
     transition: background-image 1s ease-in;
 }
 #saree {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/07/MOOSE0695-1024x1536.png");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2023/10/Untitled-Capture9847-1025x1536.png");
     background-size: cover;
     position: relative;
     width: 350px;
@@ -129,7 +129,7 @@
 }
 
 #saree:hover {
-    background-image: url("https://moosecc-1f51e.kxcdn.com/wp-content/uploads/2023/07/MOOSE0703.png");
+    background-image: url("https://mooseclothingcompany.com/wp-content/uploads/2023/10/Untitled-Capture9796.png");
     transition: background-image 1s ease-in;
 }
 #denim {

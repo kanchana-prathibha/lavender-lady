@@ -95,7 +95,7 @@ session_start();
         <div class="card" style="border: none;margin:10px" id="Shirt-card">
             <div class="card-content">
                 <div class="card-title">T_SHIRTS</div>
-                <a href="men-t-shirts-view.php" class="explore-button" style="color: white">Explore More</a>
+                <a href="men-t-shirts-view.php" class="explore-button" style="  color: white">Explore More</a>
             </div>
         </div>
 

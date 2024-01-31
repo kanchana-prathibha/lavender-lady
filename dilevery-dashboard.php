@@ -93,43 +93,61 @@
     </div>
 </div>
 <!--Tracking form end-->
-
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
 
 
 <!--item 1 start-->
 <hr>
 
-<div class="container col-md-8" id="manageForm">
-    <form>
-        <hr>
-        <div class="form-row">
-            <div class="form-group col-md-2">
-                <!--<label>Category</label>-->
-                <h6 class="card-no" id="no">01</h6>
-            </div>
-            <div class="form-group col-md-2">
-                <!--<label>Title</label>-->
-                <h6 class="card-title" id="title">11</h6>
-            </div>
-            <div class="form-group col-md-2">
-                <!--<label>Size</label>-->
-                <h6 class="card-date" id="date">2023-11-28</h6>
-            </div>
-            <div class="form-group col-md-2">
-                <!--<label>Description</label>-->
-                <h6 class="card-price" id="price">2000</h6>
-            </div>
-            <div class="form-group col-md-2">
-                <!--<label>Description</label>-->
-                <h6 class="card-status" id="status">Processing</h6>
-            </div>
-            <div class="form-group col-md-2">
-                <!--<label>Description</label>-->
-                <h6 class="card-address" id="address">51/A</h6>
-            </div>
-        </div>
-    </form>
-</div>
+<?php
+@include 'database.php';
+$select = mysqli_query($conn, "SELECT * FROM orders");
+?>
+
+<?php
+if (mysqli_num_rows($select) > 0) {
+    echo "<table>";
+    echo "<tr><th>Order ID</th><th>Order Date</th><th>Price</th><th>Quantity</th><th>Customer ID</th><th>Product ID</th><th>Cart ID</th><th>Name</th><th>Size</th><th>Photo</th><th>Delivery Status</th><th>Location</th></tr>";
+
+    // Output data of each row
+    while($row = mysqli_fetch_assoc($select)) {
+        echo "<tr>";
+        echo "<td>" . $row["orderId"] . "</td>";
+        echo "<td>" . $row["orderDate"] . "</td>";
+        echo "<td>" . $row["price"] . "</td>";
+        echo "<td>" . $row["quantity"] . "</td>";
+        echo "<td>" . $row["customerId"] . "</td>";
+        echo "<td>" . $row["productId"] . "</td>";
+        echo "<td>" . $row["cartId"] . "</td>";
+        echo "<td>" . $row["name"] . "</td>";
+        echo "<td>" . $row["size"] . "</td>";
+        echo "<td>" . $row["photo"] . "</td>";
+        echo "<td>" . $row["deliveryStatus"] . "</td>";
+        echo "<td>" . $row["location"] . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+
+// Close connection
+$conn->close();
+?>
 
 <!--item 1 end-->
 
